@@ -8,10 +8,11 @@
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@1500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
+    
     <span></span>
 </head>
 
@@ -34,11 +35,13 @@
                 </a>
               </li>
               <li>
-                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                <a class="nav-link" href="pages/contacto.html">Contáctanos</a>
               </li>
+              <!---
               <li>
-                <a class="nav-link" href="pages/quienes.html">¿Quiénes somos?</a>
+                  <a class="nav-link" class="next" href="escena1">¿Quiénes somos?</a>
               </li>
+              --->
               <li>
                 <a class="nav-link" href="pages/confianos.html">¡Confíanos tu Inmueble!</a>
               </li>
@@ -55,6 +58,7 @@
             </ul>
           </div>
         </div>
+        
     </nav>
 
     
@@ -84,10 +88,73 @@
           <a href="#slide3">3</a>
         </li>
       </ul>
+    </div>
+    <div id="inicio" style="background: #FFFFFF;">
+      <br><br><br>
+      <h1 style="text-align: center;"><a class="next" href="#escena1">¿Quiénes somos?</a></h1>
+  </div>
 
-    </div>
-    <div>
-      
-    </div>
+  <div style="background: #FFFFFF;" id="escena1" class="panel">
+      <br><br><br><br><br><br>
+      <h1 style="text-align: center;">NOSOTROS...</h1>
+      <br>
+      <h2 style="text-align: center; color: #0f88f2">
+        Somos una empresa inmobiliaria con giro en renta y venta de propiedades de terceros, además de remodelaciones en los mismos
+      </h2>
+      <br>
+      <img class="centrar" src="images/nosotros.jpeg" alt="Sygnus" style="width: 280px;">
+      <br>
+      <p class="blue-button">
+        <button class="centrar" onclick="window.location.href='#escena2'">Nuestra Misión</button>
+      </p>
+        
+  </div>
+  <div style="background: #FFFFFF;" id="escena2" class="panel"> 
+      <br><br><br><br><br><br>
+      <h1 style="text-align: center;">MISION</h1>
+      <br>
+      <h3 style="text-align: center; color: #0f88f2">
+        Ser una empresa reconocida en el mercado inmobiliario, por la innovación en 
+        los servicios integrales 	en la gestión de inmuebles y arrendamiento de propiedades, 
+        diferenciándose de sus competidores 	por ofrecer un servicio de calidad al cliente. 
+      </h3>
+      <br>
+      <img class="centrar" src="images/mision.jpeg" alt="Sygnus" style="width: 280px; align-self: auto;">
+      <br>
+    <p class="blue-button">
+      <button class="centrar" onclick="window.location.href='#escena3'">Nuestra Visión</button>
+    </p>
+           
+  </div>
+  <div style="background: #FFFFFF;" id="escena3" class="panel"> 
+      <br><br><br><br><br><br>
+      <h1 style="text-align: center;">VISION</h1>
+      <br>
+      <h2 style="text-align: center; color: #0f88f2">
+        Ser una empresa reconocida de marca Nacional en el sector de Bienes Raíces. 
+      </h2>
+      <br>
+      <img class="centrar" src="images/vision.jpeg" alt="Sygnus" style="width: 280px; align-self: auto;">
+      <br>
+    <p class="blue-button">
+      <button class="centrar" onclick="window.location.href='#escena4'">Nuestra Meta</button>
+    </p>
+  </div>
+  <div style="background: #FFFFFF;" id="escena4" class="panel"> 
+    <br><br><br><br><br><br>
+    <h1 style="text-align: center;">META</h1>
+    <br>
+    <h3 style="text-align: center; color: #0f88f2">Ser una empresa socialmente responsable, 
+      sustentada en valores del personal certificado en el ramo inmobiliario, 
+      en constante crecimiento en infraestructura, personal y clientes, 
+      garantizando la calidad 	en el servicio. </h3>
+    <p></p>
+    <br>
+    <img class="centrar" src="images/meta.jpeg" alt="Sygnus" style="width: 280px; align-self: auto;">
+    <br>
+  <p class="blue-button">
+    <button class="centrar" onclick="window.location.href='#escena1'" style="">Volver a EMPEZAR</button>
+  </p>    
+</div>
 </body>
 </html>

@@ -3,13 +3,143 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Contacto</title>
+    <title>Contáctanos</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <style>
+      * {
+    box-sizing: border-box;
+}
+
+body {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo span {
+    color: #B70E21;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+    
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #0f88f2;
+}
+
+.contact-form form button {
+    background: #0f88f2;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #042440;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: #fff;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+  
+    body {
+        padding: 0 4em;
+        
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+.content{
+    -webkit-transform: translate(-0%, 25%);
+}
+.content h3{
+color: white;
+}
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-light navbar-on-scroll fixed-top navbar-expand-lg bg-light" id="menu" color-on-scroll="100">
@@ -29,11 +159,9 @@
                 </a>
               </li>
               <li>
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link" href="contacto.html">Contáctanos</a>
               </li>
-              <li>
-                <a class="nav-link" href="quienes.html">¿Quiénes somos?</a>
-              </li>
+              
               <li>
                 <a class="nav-link" href="confianos.html">¡Confíanos tu Inmueble!</a>
               </li>
@@ -51,5 +179,62 @@
           </div>
         </div>
     </nav>
+
+    <!-- Formulario -->
+    <div class="content">
+      <div class="contact-wrapper animated bounceInUp">
+          <div class="contact-form">
+              <h3>Contáctanos</h3>
+              <form action="">
+                  <p>
+                      <label>Nombre Completo *</label>
+                      <input type="text" name="fullname">
+                  </p>
+                  <p>
+                      <label>Correo electrónico *</label>
+                      <input type="email" name="email">
+                  </p>
+                  <p>
+                      <label><br>Número telefónico *</label>
+                      <input type="tel" name="phone">
+                  </p>
+                  <p>
+                      <br>
+                      <label>Código de la vivienda de interés *</label>
+                      <input type="text" name="affair">
+                  </p>
+                  <p class="block">
+                     <label>Escriba su mensaje *</label> 
+                      <textarea name="message" rows="3"></textarea>
+                  </p>
+                  <p class="block">
+                      <button>
+                          Enviar
+                      </button>
+                  </p>
+              </form>
+          </div>
+          <div class="contact-info">
+              <h4>Información adicional</h4>
+              <ul>
+                  <li><i class="fas fa-map-marker-alt"></i> Calle del Paraíso 8904 Colonia Nuevo Paraíso</li>
+                  <li><i class="fas fa-phone"></i> +52 (614) 228 7620</li>
+                  <li><i class="fas fa-envelope-open-text"></i> sygnusinmobiliaria@gmail.com</li>
+              </ul>
+                <li><i class="fas fa-map-marker-alt"></i> Facebook: Sygnus Inmobiliaria</li>
+                  <li><i class="fas fa-phone"></i> Instagram: sygnus_inmobiliaria</li>
+                  <li><i class="fas fa-envelope-open-text"></i> WhatsApp: +52 614 228 7620</li>
+              
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1040.6397268159267!2d-106.13334302038378!3d28.68124382943434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea425d37a9651b%3A0x1a0be4c216162a6b!2sDel%20Para%C3%ADso%208904%2C%20Nuevo%20Para%C3%ADso%2C%2031123%20Chihuahua%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1622828437964!5m2!1ses-419!2smx" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  
+          </div>
+      </div>
+
+  </div>
+  <div class="contact-wrapper animated bounceInUp">
+    
+  </div>
+ 
+  
 </body>
 </html>
