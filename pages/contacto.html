@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- ANIMATE CSS -->
@@ -172,7 +173,7 @@ color: white;
                 <ul aria-labelledby="navbarDropdown">
                   <li><a href="venta.html">Venta</a></li>
                   <li><a href="renta.html">Renta</a></li>
-                  <li><a href="mas.html">Más...</a></li>
+                  
                 </ul>
               </li>
             </ul>
@@ -185,30 +186,30 @@ color: white;
       <div class="contact-wrapper animated bounceInUp">
           <div class="contact-form">
               <h3>Contáctanos</h3>
-              <form action="">
+              <form action="sendContact.php" method="post">
                   <p>
                       <label>Nombre Completo *</label>
-                      <input type="text" name="fullname">
+                      <input type="text" name="nombre" id="nombre" placeholder="NOMBRE">
                   </p>
                   <p>
                       <label>Correo electrónico *</label>
-                      <input type="email" name="email">
+                      <input type="email" name="email" id="email" placeholder="E-MAIL">
                   </p>
                   <p>
                       <label><br>Número telefónico *</label>
-                      <input type="tel" name="phone">
+                      <input type="tel" name="telefono" id="telefono" placeholder="TELEFONO"> 
                   </p>
                   <p>
                       <br>
                       <label>Código de la vivienda de interés *</label>
-                      <input type="text" name="affair">
+                      <input type="text" name="codigo" id="codigo" placeholder="CODIGO DE LA CASA">
                   </p>
                   <p class="block">
                      <label>Escriba su mensaje *</label> 
-                      <textarea name="message" rows="3"></textarea>
+                      <textarea name="mensaje" rows="3" id="mensaje" placeholder="TEXTO DE MENSAJE"></textarea>
                   </p>
                   <p class="block">
-                      <button>
+                      <button type="submit">
                           Enviar
                       </button>
                   </p>
@@ -219,12 +220,15 @@ color: white;
               <ul>
                   <li><i class="fas fa-map-marker-alt"></i> Calle del Paraíso 8904 Colonia Nuevo Paraíso</li>
                   <li><i class="fas fa-phone"></i> +52 (614) 228 7620</li>
-                  <li><i class="fas fa-envelope-open-text"></i> sygnusinmobiliaria@gmail.com</li>
+                  <li><i class="far fa-envelope"></i> sygnusinmobiliaria@gmail.com</li>
               </ul>
-                <li><i class="fas fa-map-marker-alt"></i> Facebook: Sygnus Inmobiliaria</li>
-                  <li><i class="fas fa-phone"></i> Instagram: sygnus_inmobiliaria</li>
-                  <li><i class="fas fa-envelope-open-text"></i> WhatsApp: +52 614 228 7620</li>
               
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>  
+                </svg>   Sygnus Inmobiliaria</li>
+                  <li><i class="fab fa-instagram"></i>  sygnus_inmobiliaria</li>
+                  <li><i class="fab fa-whatsapp"></i> +52 614 228 7620</li>
+              <br>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1040.6397268159267!2d-106.13334302038378!3d28.68124382943434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea425d37a9651b%3A0x1a0be4c216162a6b!2sDel%20Para%C3%ADso%208904%2C%20Nuevo%20Para%C3%ADso%2C%2031123%20Chihuahua%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1622828437964!5m2!1ses-419!2smx" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   
           </div>
