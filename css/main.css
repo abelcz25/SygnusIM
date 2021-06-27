@@ -258,8 +258,8 @@ body{
     outline: 0;
 }
 
-footer{
-  background-image: url("../images/footer_Mesa_de_trabajo_1.png");
-  padding: 30 px;
+.containerfooter{
+  background: #042440;
+  padding: 30px;
 }
 
